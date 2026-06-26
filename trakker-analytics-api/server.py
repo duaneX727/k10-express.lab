@@ -2,6 +2,18 @@ from flask import Flask, jsonify
 import logging
 import csv
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+# Access the token
+CLOUDFLARE_TOKEN = os.getenv("CLOUDFLARE_API_TOKEN")
+
+# Example usage (e.g., in headers for an API request)
+headers = {
+    "Authorization": f"Bearer {CLOUDFLARE_TOKEN}",
+    "Content-Type": "application/json"
+}
 
 app = Flask(__name__)
 # --- Logger Suppression ---
