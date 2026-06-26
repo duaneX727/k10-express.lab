@@ -1,2 +1,11 @@
 node_modules/
 vscode_cli.tar.gz
+
+# Tell the root server repo to completely ignore the python project folder
+K10-Lab/Tiguan-Project/
+
+# Ignore temporary payload logs and data files
+*.csv
+*.json
+!trakker-ingest-webhook/package.json
+*.py

@@ -1,8 +1,8 @@
 const http = require('http');
 
 // '0.0.0.0' allows any device on your Wi-Fi to see this server
-const hostname = '192.168.50.207'; 
-const port = 3000;
+const hostname = '192.168.50.207';
+const port = 3001;
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
